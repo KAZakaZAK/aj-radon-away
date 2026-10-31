@@ -400,3 +400,15 @@ ul, ol { padding: 0; list-style: none; }
   .site-nav a:not(.btn):active::after,
   .site-nav a[aria-current="page"]::after { left: 0; right: 0; bottom: 12px; }
 }
+
+/* Hero CTA group: chips match the width of the CTA row */
+.hero-cta { display: flex; flex-direction: column; gap: var(--space-3); width: 100%; }
+.hero .trust-chips { justify-content: space-between; gap: var(--space-1); }
+.hero .trust-chips li { padding: 6px 10px; font-size: 12px; }
+
+@media (min-width: 768px) {
+  .hero-cta { width: fit-content; max-width: 100%; }
+  .hero .trust-chips { flex-wrap: nowrap; }
+  .hero .trust-chips li { flex: 1 1 auto; text-align: center; padding: 4px var(--space-2); font-size: var(--fs-small); white-space: nowrap; }
+}
+.contact-grid > * { min-width: 0; }
