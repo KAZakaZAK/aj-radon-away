@@ -1,6 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="Heart and house mark">
-  <rect width="64" height="64" rx="8" fill="#1c1c1e"/>
-  <path d="M32 54 C14 42 8 31 8 23 C8 15 14 10 21 10 C26 10 30 13 32 17 C34 13 38 10 43 10 C50 10 56 15 56 23 C56 31 50 42 32 54 Z" fill="#6ea2ff"/>
-  <path d="M32 21 L43 30 H39 V40 H25 V30 H21 Z" fill="#0b0b0c"/>
-  <rect x="29" y="33" width="6" height="7" fill="#6ea2ff"/>
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A&amp;J Radon Away mark">
+<g clip-path="url(#clip0_37_697)">
+<path d="M38.4 0H1.6C0.716344 0 0 0.716344 0 1.6V38.4C0 39.2837 0.716344 40 1.6 40H38.4C39.2837 40 40 39.2837 40 38.4V1.6C40 0.716344 39.2837 0 38.4 0Z" fill="#1C1C1E"/>
+<path d="M36.8 4V18.608L25.616 10.864L16 17.276V11.2H12.8V19.408L3.2 25.808V4C3.2 3.56 3.56 3.2 4 3.2H36C36.44 3.2 36.8 3.56 36.8 4ZM3.2 29.656V36C3.2 36.44 3.56 36.8 4 36.8H12.8V23.256L3.2 29.656ZM25.584 14.736L16 21.124V36.8H36C36.44 36.8 36.8 36.44 36.8 36V22.5L25.584 14.736Z" fill="#6EA2FF"/>
+</g>
+<defs>
+<clipPath id="clip0_37_697">
+<rect width="40" height="40" fill="white"/>
+</clipPath>
+</defs>
 </svg>
