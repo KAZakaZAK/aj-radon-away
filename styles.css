@@ -359,9 +359,12 @@ ul, ol { padding: 0; list-style: none; }
 
 @media (min-width: 768px) {
   .hero { min-height: 560px; display: flex; align-items: center; color: var(--color-text);
-    background:
-      url("assets/hero-neighborhood.jpg") center / cover no-repeat,
-      var(--color-bg);
+    position: relative; isolation: isolate; background: var(--color-bg);
+  }
+  .hero::before {
+    content: ""; position: absolute; inset: 0; z-index: -1;
+    background: url("assets/hero-neighborhood.jpg") center / cover no-repeat;
+    transform: scaleX(-1);
   }
   .hero .eyebrow { color: var(--color-accent); }
   .hero .lede { color: var(--color-text-muted); }
