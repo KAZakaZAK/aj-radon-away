@@ -1,4 +1,4 @@
-var CACHE = 'aj-radon-v3';
+var CACHE = 'aj-radon-v4';
 var CORE = [
   './',
   'index.html',
@@ -19,7 +19,7 @@ var OPTIONAL = [
 self.addEventListener('install', function (event) {
   event.waitUntil(
     caches.open(CACHE).then(function (cache) {
-      return cache.addAll(CORE).then(function () {
+      return Promise.all(CORE.map(function (u) { return cache.add(new Request(u, { cache: 'reload' })); })).then(function () {
         return Promise.all(OPTIONAL.map(function (url) {
           return cache.add(url).catch(function () {});
         }));
@@ -44,7 +44,7 @@ self.addEventListener('fetch', function (event) {
   if (url.origin !== self.location.origin) return;
 
   event.respondWith(
-    fetch(event.request)
+    fetch(event.request, { cache: 'no-cache' })
       .then(function (response) {
         var copy = response.clone();
         caches.open(CACHE).then(function (cache) { cache.put(event.request, copy); });
