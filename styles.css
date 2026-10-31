@@ -122,7 +122,8 @@ ul, ol { padding: 0; list-style: none; }
   color: var(--color-text); text-decoration: none; font-weight: 600;
 }
 .site-nav a:not(.btn) { position: relative; }
-.site-nav a:not(.btn):hover { color: var(--color-text-muted); }
+.site-nav a:not(.btn) { color: var(--color-primary); }
+.site-nav a:not(.btn):hover, .site-nav a[aria-current="page"], .site-nav a[aria-current="page"]:hover { color: var(--color-text); }
 .nav-cta .btn { width: 100%; }
 
 /* Hero */
