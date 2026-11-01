@@ -415,3 +415,23 @@ ul, ol { padding: 0; list-style: none; }
 
 .booking .booking-or { font-size: var(--fs-small); margin-top: var(--space-1); }
 .booking > .btn { margin-top: var(--space-1); }
+
+/* Contact page */
+.title-md { font-size: var(--fs-h2); }
+.contact-info { display: grid; gap: var(--space-3); align-content: start; }
+.contact-head .eyebrow { display: block; }
+.contact-intro { color: var(--color-text-muted); }
+.contact-info .contact-list { margin-top: var(--space-1); gap: var(--space-3); }
+.contact-link { background: transparent; padding: 0; }
+.contact-link:hover { background: transparent; color: var(--color-primary); }
+.section.contact-section { padding: var(--space-6) 0; }
+.form { padding: var(--space-3); }
+
+@media (min-width: 768px) {
+  .title-md { font-size: 32px; }
+  .form { padding: var(--space-4); }
+}
+
+@media (min-width: 1024px) {
+  .contact-grid { grid-template-columns: minmax(0, 536fr) minmax(0, 600fr); gap: var(--space-8); }
+}
