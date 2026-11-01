@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap">
-  <link rel="stylesheet" href="styles.css?v=13">
+  <link rel="stylesheet" href="styles.css?v=14">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -149,19 +149,20 @@
     </form>
     <img src="assets/icon.svg" alt="" width="64" height="64">
     <h2 id="booking-title">Book your mitigation</h2>
-    <p>Safety from radon gas is just one appointment away. Leave your number and we will call you back.</p>
+    <p>Safety from radon gas is just one appointment away.</p>
+    <a class="btn btn-primary btn-block" href="tel:+16148240849">Call 614-824-0849</a>
+    <p class="booking-or">Or leave your number and we will call you back.</p>
     <form id="booking-form" novalidate>
       <div class="field">
         <label for="bk-phone">Phone</label>
         <input id="bk-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required>
         <p class="error" id="bk-phone-err" role="alert"></p>
       </div>
-      <button class="btn btn-primary btn-block" type="submit">Request a call back</button>
+      <button class="btn btn-secondary btn-block" type="submit">Request a call back</button>
       <p class="form-note" id="bk-status" role="status"></p>
     </form>
-    <p class="booking-call">Prefer to talk now? <a href="tel:+16148240849">Call 614-824-0849</a></p>
   </dialog>
 
-  <script src="app.js?v=13" defer></script>
+  <script src="app.js?v=14" defer></script>
 </body>
 </html>

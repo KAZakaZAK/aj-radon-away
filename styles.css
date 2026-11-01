@@ -413,8 +413,5 @@ ul, ol { padding: 0; list-style: none; }
 }
 .contact-grid > * { min-width: 0; }
 
-.booking-call { font-size: var(--fs-small); }
-.booking-call a {
-  display: inline-flex; align-items: center; min-height: var(--tap);
-  color: var(--color-primary); font-weight: 700; text-decoration: underline; text-underline-offset: 4px;
-}
+.booking .booking-or { font-size: var(--fs-small); margin-top: var(--space-1); }
+.booking > .btn { margin-top: var(--space-1); }
