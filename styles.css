@@ -416,8 +416,9 @@ ul, ol { padding: 0; list-style: none; }
 .contact-head .eyebrow { display: block; }
 .contact-intro { color: var(--color-text-muted); }
 .contact-info .contact-list { margin-top: calc(var(--space-1) * -1); gap: var(--space-1); }
-.contact-link { background: transparent; padding: var(--space-1) 0; }
-.contact-link:hover { background: transparent; color: var(--color-primary); }
+.contact-section .contact-link { background: transparent; padding: var(--space-1) 0; }
+.contact-section .contact-link:hover { background: transparent; color: var(--color-primary); }
+#contact .contact-list { gap: var(--space-3); }
 .section.contact-section { padding: var(--space-6) 0; }
 .form { padding: var(--space-3); }
 
@@ -478,3 +479,29 @@ main { flex: 1 0 auto; }
 .licenses p { margin: 0; }
 .footer-bottom { font-size: 13px; }
 .footer-bottom p { margin: 0; }
+
+/* Sprint 1 */
+.section.section-tight { padding: var(--space-6) 0; }
+.callout { margin-top: 0; }
+.section .callout h2 { margin-bottom: 0; }
+.callout + .more { margin-top: var(--space-4); }
+.trust-chips li { border: 0; }
+.faq { overflow: hidden; }
+.faq summary {
+  justify-content: space-between; gap: var(--space-2);
+  padding: var(--space-2) var(--space-3); list-style: none;
+}
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; color: var(--color-accent); font-size: var(--fs-h3); font-weight: 700; line-height: 1; }
+.faq[open] summary::after { content: "\2212"; }
+
+@media (min-width: 768px) {
+  .stats { padding: var(--space-6) 0; }
+  .page-hero { padding: var(--space-10) 0; }
+  .trust-chips li { border: 1px solid var(--color-border); }
+  .about-page-grid { grid-template-columns: 1fr 1fr; }
+  .about-page-grid .photo { min-height: 520px; }
+}
+@media (min-width: 1024px) {
+  .about-page-grid { gap: var(--space-8); }
+}
