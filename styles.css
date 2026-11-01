@@ -412,3 +412,9 @@ ul, ol { padding: 0; list-style: none; }
   .hero .trust-chips li { flex: 1 1 auto; text-align: center; padding: 4px var(--space-2); font-size: var(--fs-small); white-space: nowrap; }
 }
 .contact-grid > * { min-width: 0; }
+
+.booking-call { font-size: var(--fs-small); }
+.booking-call a {
+  display: inline-flex; align-items: center; min-height: var(--tap);
+  color: var(--color-primary); font-weight: 700; text-decoration: underline; text-underline-offset: 4px;
+}
