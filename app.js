@@ -11,6 +11,13 @@
     nav.classList.toggle('open', open);
     toggle.setAttribute('aria-expanded', String(open));
     toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    document.documentElement.classList.toggle('menu-open', open);
+  }
+
+  if (window.matchMedia) {
+    window.matchMedia('(min-width: 1024px)').addEventListener('change', function (e) {
+      if (e.matches) setMenu(false);
+    });
   }
 
   toggle.addEventListener('click', function () {
