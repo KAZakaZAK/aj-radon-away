@@ -461,3 +461,20 @@ main { flex: 1 0 auto; }
   .footer-info { grid-template-columns: repeat(3, 1fr); }
   .licenses { grid-column: auto; }
 }
+
+/* Footer refinements: proportional logo, top-aligned columns, smaller type */
+.site-footer { font-size: 13px; line-height: 1.5; }
+.footer-info { align-items: start; }
+.footer-brand img { width: 48px; height: 48px; aspect-ratio: 1 / 1; object-fit: contain; flex: none; align-self: flex-start; }
+.footer-brand p { gap: 4px; }
+.footer-name { font-size: var(--fs-small); line-height: 1.5; }
+.footer-address { font-size: 13px; line-height: 1.5; }
+.footer-links { gap: 0; }
+.footer-links a, .footer-links li:first-child a {
+  display: flex; align-items: flex-start; min-height: 32px;
+  font-size: var(--fs-small); line-height: 1.5;
+}
+.licenses { gap: var(--space-1); font-size: 13px; line-height: 1.5; }
+.licenses p { margin: 0; }
+.footer-bottom { font-size: 13px; }
+.footer-bottom p { margin: 0; }
