@@ -513,3 +513,7 @@ html.menu-open { overflow: hidden; }
   .site-nav a:not(.btn) { min-height: 56px; font-size: var(--fs-h3); }
   .nav-cta { margin-top: var(--space-3); }
 }
+
+/* Taller hero on wide screens */
+@media (min-width: 1280px) { .hero { min-height: 640px; } }
+@media (min-width: 1600px) { .hero { min-height: 720px; } }

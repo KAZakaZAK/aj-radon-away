@@ -1,4 +1,4 @@
-var CACHE = 'aj-radon-v8';
+var CACHE = 'aj-radon-v9';
 var CORE = [
   './',
   'index.html',
