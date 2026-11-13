@@ -343,10 +343,12 @@ ul, ol { padding: 0; list-style: none; }
     position: relative; isolation: isolate; background: var(--color-bg);
   }
   .hero::before {
-    content: ""; position: absolute; inset: 0; z-index: -1;
+    content: ""; position: absolute; top: 0; bottom: 0; right: 0; left: 40%; z-index: -1;
     background: url("assets/hero-neighborhood.jpg") center / cover no-repeat;
-    transform: scaleX(-1);
+    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 35%);
+    mask-image: linear-gradient(to right, transparent 0, #000 35%);
   }
+  .hero::before { background-position: 20% center; }
   .hero .eyebrow { color: var(--color-accent); }
   .hero .lede { color: var(--color-text-muted); }
   .hero .btn-primary { border: 0; }
@@ -367,6 +369,7 @@ ul, ol { padding: 0; list-style: none; }
 }
 
 @media (min-width: 1024px) {
+  .hero::before { background-position: center; }
   .container { max-width: 1200px; padding: 0 var(--space-5); }
   .section { padding: var(--space-10) 0; }
   .steps { gap: var(--space-3); }
