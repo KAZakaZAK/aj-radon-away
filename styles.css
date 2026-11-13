@@ -281,7 +281,7 @@ ul, ol { padding: 0; list-style: none; }
 .hero {
   background:
     linear-gradient(rgba(36, 50, 71, 0.74), rgba(36, 50, 71, 0.74)),
-    url("assets/hero-neighborhood.jpg") center / cover no-repeat,
+    url("assets/hero-neighborhood.jpg") 75% center / cover no-repeat,
     var(--color-text);
   color: #ffffff;
 }
@@ -343,12 +343,9 @@ ul, ol { padding: 0; list-style: none; }
     position: relative; isolation: isolate; background: var(--color-bg);
   }
   .hero::before {
-    content: ""; position: absolute; top: 0; bottom: 0; right: 0; left: 40%; z-index: -1;
-    background: url("assets/hero-neighborhood.jpg") center / cover no-repeat;
-    -webkit-mask-image: linear-gradient(to right, transparent 0, #000 35%);
-    mask-image: linear-gradient(to right, transparent 0, #000 35%);
+    content: ""; position: absolute; inset: 0; z-index: -1;
+    background: url("assets/hero-neighborhood.jpg") 70% center / cover no-repeat;
   }
-  .hero::before { background-position: 20% center; }
   .hero .eyebrow { color: var(--color-accent); }
   .hero .lede { color: var(--color-text-muted); }
   .hero .btn-primary { border: 0; }
@@ -369,7 +366,6 @@ ul, ol { padding: 0; list-style: none; }
 }
 
 @media (min-width: 1024px) {
-  .hero::before { background-position: center; }
   .container { max-width: 1200px; padding: 0 var(--space-5); }
   .section { padding: var(--space-10) 0; }
   .steps { gap: var(--space-3); }
